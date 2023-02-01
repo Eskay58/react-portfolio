@@ -64,6 +64,14 @@ function Profile() {
           </p>
         </div>
       </div>
+      <div id="socials">
+        <a href="SNSリンク" className="social_icon">
+          <img src="#" />
+        </a>
+        <a href="SNSリンク" className="social_icon">
+          <img src="#" />
+        </a>
+      </div>
     </div>
   );
 }
