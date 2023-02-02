@@ -1,10 +1,9 @@
 import "./App.css";
-import Gallery from "./components/Gallery";
+import Gallery from "./components/Gallery/Gallery";
 import Header from "./components/Header";
 import Profile from "./components/Profile/Profile";
-import Skills from "./components/Skills";
+import Skills from "./components/Skills/Skills";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { useEffect, useState } from "react";
 
 function App() {
   return (
