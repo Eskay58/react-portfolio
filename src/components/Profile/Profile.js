@@ -48,7 +48,12 @@ function Profile() {
 
   return (
     <div id="profile_container">
-      <img id="profile_img" src={profileImage} className="profile-image" />
+      <img
+        id="profile_img"
+        alt=""
+        src={profileImage}
+        className="profile-image"
+      />
       <h2>Seiya</h2>
       <div id="profile_description">
         <p className="profile-text">
@@ -66,10 +71,10 @@ function Profile() {
       </div>
       <div id="socials">
         <a href="SNSリンク" className="social_icon">
-          <img src="#" />
+          <img src="#" alt="" />
         </a>
         <a href="SNSリンク" className="social_icon">
-          <img src="#" />
+          <img src="#" alt="" />
         </a>
       </div>
     </div>
