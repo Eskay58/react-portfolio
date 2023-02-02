@@ -3,6 +3,7 @@ import reactImage from "../../Images/react.png";
 import jsImage from "../../Images/js.png";
 import firebaseImage from "../../Images/firebase.jpg";
 import profileImage from "../../Images/sibainu.jpg";
+import githubImage from "../../Images/js.png";
 import "./Profile.scss";
 
 function Profile() {
@@ -68,15 +69,22 @@ function Profile() {
             自己紹介文
           </p>
         </div>
+        <div>E-mail: say.yeah58@gmail.com</div>
       </div>
       <div id="socials">
         <a href="SNSリンク" className="social_icon">
           <img src="#" alt="" />
         </a>
         <a href="SNSリンク" className="social_icon">
-          <img src="#" alt="" />
+          <img src={githubImage} alt="" />
         </a>
       </div>
+      <ul>
+        <li>fix header</li>
+        <li>add image</li>
+        <li>skills text style</li>
+        <li>deploy</li>
+      </ul>
     </div>
   );
 }
