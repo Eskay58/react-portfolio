@@ -75,11 +75,12 @@ function Profile() {
         </a>
       </div>
       <ul>
-        <li>fix header</li>
-        <li>add image</li>
+        <li>#fix header</li>
         <li>skills text style</li>
-        <li>deploy</li>
-        <li>profile選択時だけ横にずれる</li>
+        <li>add image</li>
+        <li>github pages deploy</li>
+        <li>fix text</li>
+        <li>#profile選択時だけ横にずれる</li>
       </ul>
     </div>
   );

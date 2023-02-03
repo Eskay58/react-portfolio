@@ -7,7 +7,7 @@ function Gallery() {
       title: "Portfolio",
       description:
         "当ウェブサイトです。Reactを用いてポートフォリオサイトを作成しました",
-      skill: "スキル: React, Firebase",
+      skill: "スキル: React, Github Pages",
       userId: "",
       password: "",
       image: require("../../Images/firebase.jpg"),
@@ -15,7 +15,7 @@ function Gallery() {
     },
     {
       title: "Pokedex",
-      description: "Reactを用いてポケモン図鑑を作成しました",
+      description: "React, PokeAPIを用いてポケモン図鑑を作成しました",
       skill: "スキル: React,Firebase",
       userId: "",
       password: "",
@@ -24,35 +24,39 @@ function Gallery() {
     },
     {
       title: "Angular Chat",
-      description: "Angularを用いてチャットアプリケーションを作成しました",
-      skill: "スキル: Angular, Firebase",
+      description:
+        "Angularを用いてチャットアプリケーションを作成しました。認証機能、チャット内容のリアルタイム反映が可能です。",
+      skill: "スキル: Angular, Bootstrap, Firebase, Firestore",
       userId: "E-mail: eskay058@gmail",
       password: "Password: password123",
       image: require("../../Images/firebase.jpg"),
       url: "https://angularchat-61281.web.app/account/login",
     },
     {
-      title: "ECサイト ユーザー画面",
-      description: "Laravelを用いてチャットアプリケーションを作成しました",
-      skill: "スキル: Laravel, AWS",
+      title: "【ユーザー用】ECサイト",
+      description:
+        "Laravelの認証機能を利用し、管理者、オーナー、ユーザーと3つのログインが可能です。 Bladeコンポーネント, Stripe決済, 画像アップロードなどを実装しています。",
+      skill: "スキル: Laravel, Tailwindcss, AWS",
       userId: "E-mail: test@test.com",
       password: "Password: password123",
       image: require("../../Images/firebase.jpg"),
       url: "http://mlshopsk.net/login",
     },
     {
-      title: "ECサイト オーナー画面",
-      description: "Laravelを用いてチャットアプリケーションを作成しました",
-      skill: "スキル: Laravel, AWS",
+      title: "【オーナー用】ECサイト",
+      description:
+        "Laravelの認証機能を利用し、管理者、オーナー、ユーザーと3つのログインが可能です。 Bladeコンポーネント, Stripe決済, 画像アップロードなどを実装しています。",
+      skill: "スキル: Laravel, Tailwindcss, AWS",
       userId: "E-mail: test1@test.com",
       password: "Password: password123",
       image: require("../../Images/firebase.jpg"),
       url: "http://mlshopsk.net/owner/login",
     },
     {
-      title: "ECサイト 管理者画面",
-      description: "Laravelを用いてチャットアプリケーションを作成しました",
-      skill: "スキル: Laravel, AWS",
+      title: "【管理者用】ECサイト",
+      description:
+        "Laravelの認証機能を利用し、管理者、オーナー、ユーザーと3つのログインが可能です。 Bladeコンポーネント, Stripe決済, 画像アップロードなどを実装しています。",
+      skill: "スキル: Laravel, Tailwindcss, AWS",
       userId: "E-mail: test@test.com",
       password: "Password: password123",
       image: require("../../Images/firebase.jpg"),
@@ -73,6 +77,7 @@ function Gallery() {
                   {card.description}
                   <br />
                   {card.skill}
+                  <br />
                   <br />
                   {card.userId}
                   <br />

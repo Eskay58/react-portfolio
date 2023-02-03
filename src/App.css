@@ -35,14 +35,14 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   /* color: white; */
-  /* transition: all 0.2s; */
+  transition: all 0.2s;
   color: inherit;
 }
 
 nav ul li a:hover {
-  /* font-weight: 900; */
+  font-weight: 900;
 }
 
 nav ul .currentPath {
-  font-weight: 600;
+  font-weight: 900;
 }
