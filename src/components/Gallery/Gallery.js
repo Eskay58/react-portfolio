@@ -4,6 +4,16 @@ import "../Gallery/Gallery.scss";
 function Gallery() {
   const cards = [
     {
+      title: "Portfolio",
+      description:
+        "当ウェブサイトです。Reactを用いてポートフォリオサイトを作成しました",
+      skill: "スキル: React, Firebase",
+      userId: "",
+      password: "",
+      image: require("../../Images/firebase.jpg"),
+      url: "https://react-pokemon-app-9d86a.web.app/",
+    },
+    {
       title: "Pokedex",
       description: "Reactを用いてポケモン図鑑を作成しました",
       skill: "スキル: React,Firebase",
@@ -13,9 +23,40 @@ function Gallery() {
       url: "https://react-pokemon-app-9d86a.web.app/",
     },
     {
-      title: "成果",
-      description: "成果の説明",
-      image: require("../../Images/js.png"),
+      title: "Angular Chat",
+      description: "Angularを用いてチャットアプリケーションを作成しました",
+      skill: "スキル: Angular, Firebase",
+      userId: "E-mail: eskay058@gmail",
+      password: "Password: password123",
+      image: require("../../Images/firebase.jpg"),
+      url: "https://angularchat-61281.web.app/account/login",
+    },
+    {
+      title: "ECサイト ユーザー画面",
+      description: "Laravelを用いてチャットアプリケーションを作成しました",
+      skill: "スキル: Laravel, AWS",
+      userId: "E-mail: test@test.com",
+      password: "Password: password123",
+      image: require("../../Images/firebase.jpg"),
+      url: "http://mlshopsk.net/login",
+    },
+    {
+      title: "ECサイト オーナー画面",
+      description: "Laravelを用いてチャットアプリケーションを作成しました",
+      skill: "スキル: Laravel, AWS",
+      userId: "E-mail: test1@test.com",
+      password: "Password: password123",
+      image: require("../../Images/firebase.jpg"),
+      url: "http://mlshopsk.net/owner/login",
+    },
+    {
+      title: "ECサイト 管理者画面",
+      description: "Laravelを用いてチャットアプリケーションを作成しました",
+      skill: "スキル: Laravel, AWS",
+      userId: "E-mail: test@test.com",
+      password: "Password: password123",
+      image: require("../../Images/firebase.jpg"),
+      url: "http://mlshopsk.net/admin/login",
     },
   ];
 

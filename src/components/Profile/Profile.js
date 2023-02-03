@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import reactImage from "../../Images/react.png";
 import jsImage from "../../Images/js.png";
 import firebaseImage from "../../Images/firebase.jpg";
-import profileImage from "../../Images/sibainu.jpg";
+import profileImage from "../../Images/js.png";
 import githubImage from "../../Images/js.png";
 import "./Profile.scss";
 
@@ -49,12 +49,7 @@ function Profile() {
 
   return (
     <div id="profile_container">
-      <img
-        id="profile_img"
-        alt=""
-        src={profileImage}
-        className="profile-image"
-      />
+      <img id="profile_img" src={profileImage} className="profile-image" />
       <h2>Seiya</h2>
       <div id="profile_description">
         <p className="profile-text">
@@ -72,9 +67,9 @@ function Profile() {
         <div>E-mail: eskay058@gmail.com</div>
       </div>
       <div id="socials">
-        <a href="SNSリンク" className="social_icon">
+        {/* <a href="SNSリンク" className="social_icon">
           <img src="#" alt="" />
-        </a>
+        </a> */}
         <a href="SNSリンク" className="social_icon">
           <img src={githubImage} alt="" />
         </a>
@@ -84,6 +79,7 @@ function Profile() {
         <li>add image</li>
         <li>skills text style</li>
         <li>deploy</li>
+        <li>profile選択時だけ横にずれる</li>
       </ul>
     </div>
   );

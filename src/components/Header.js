@@ -7,23 +7,11 @@ const Header = () => {
   return (
     <header>
       <div className="logo">
-        <h3>
-          {pathName === `/` && (
-            <>
-              <p>Profile</p>
-            </>
-          )}
-          {pathName === `/gallery` && (
-            <>
-              <p>Gallery</p>
-            </>
-          )}
-          {pathName === `/skills` && (
-            <>
-              <p>Skills</p>
-            </>
-          )}
-        </h3>
+        <h1>
+          - {pathName === `/` && <>Profile</>}
+          {pathName === `/gallery` && <>Gallery</>}
+          {pathName === `/skills` && <>Skills</>} -
+        </h1>
       </div>
 
       <nav>
