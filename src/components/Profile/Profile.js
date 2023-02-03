@@ -69,7 +69,7 @@ function Profile() {
             自己紹介文
           </p>
         </div>
-        <div>E-mail: say.yeah58@gmail.com</div>
+        <div>E-mail: eskay058@gmail.com</div>
       </div>
       <div id="socials">
         <a href="SNSリンク" className="social_icon">

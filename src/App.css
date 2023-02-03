@@ -3,6 +3,8 @@
   height: 100vh;
   font-size: 18px;
   color: #2c3e50;
+  font-family: M PLUS Rounded\1c, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 header {
@@ -33,5 +35,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+  font-weight: bold;
+}
+
+nav ul .currentPath {
   font-weight: bold;
 }
