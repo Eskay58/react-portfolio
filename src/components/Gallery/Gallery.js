@@ -11,7 +11,7 @@ function Gallery() {
       userId: "",
       password: "",
       image: require("../../Images/firebase.jpg"),
-      url: "https://react-pokemon-app-9d86a.web.app/",
+      url: "#",
     },
     {
       title: "Pokedex",
@@ -27,7 +27,7 @@ function Gallery() {
       description:
         "Angularを用いてチャットアプリケーションを作成しました。認証機能、チャット内容のリアルタイム反映が可能です。",
       skill: "スキル: Angular, Bootstrap, Firebase, Firestore",
-      userId: "E-mail: eskay058@gmail",
+      userId: "E-mail: eskay058@gmail.com",
       password: "Password: password123",
       image: require("../../Images/firebase.jpg"),
       url: "https://angularchat-61281.web.app/account/login",

@@ -70,7 +70,11 @@ function Profile() {
         {/* <a href="SNSリンク" className="social_icon">
           <img src="#" alt="" />
         </a> */}
-        <a href="SNSリンク" className="social_icon">
+        <a
+          href="https://github.com/Eskay58/"
+          target="_blank"
+          className="social_icon"
+        >
           <img src={githubImage} alt="" />
         </a>
       </div>
@@ -81,6 +85,7 @@ function Profile() {
         <li>github pages deploy</li>
         <li>fix text</li>
         <li>#profile選択時だけ横にずれる</li>
+        <li>pokedex カード一個足りない</li>
       </ul>
     </div>
   );
