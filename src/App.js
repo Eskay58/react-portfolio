@@ -9,7 +9,9 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
+        <div className="bg-white sticky top-0 bg-opacity-80 py-4 mb-4 z-50 ">
+          <Header />
+        </div>
 
         <Routes>
           <Route path="/" element={<Profile />} />

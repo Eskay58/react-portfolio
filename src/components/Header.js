@@ -5,16 +5,16 @@ const Header = () => {
   const pathName = useLocation().pathname;
 
   return (
-    <header>
+    <header className="header">
       <div className="logo">
-        <h1>
+        <h1 class="title-font sm:text-4xl text-3xl font-bold mb-4">
           - {pathName === `/` && <>Profile</>}
           {pathName === `/gallery` && <>Gallery</>}
           {pathName === `/skills` && <>Skills</>} -
         </h1>
       </div>
 
-      <nav>
+      <nav className="">
         <ul>
           <li className={pathName === `/` && "currentPath"}>
             <Link to="/">Profile</Link>
