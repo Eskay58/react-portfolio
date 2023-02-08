@@ -7,22 +7,22 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <h1 class="title-font sm:text-4xl text-3xl font-bold mb-4">
+        <h1 className="title-font sm:text-4xl text-3xl font-bold mb-4">
           - {pathName === `/` && <>Profile</>}
           {pathName === `/gallery` && <>Gallery</>}
           {pathName === `/skills` && <>Skills</>} -
         </h1>
       </div>
 
-      <nav className="">
+      <nav>
         <ul>
-          <li className={pathName === `/` && "currentPath"}>
+          <li className={pathName === `/` ? "currentPath" : ""}>
             <Link to="/">Profile</Link>
           </li>
-          <li className={pathName === `/gallery` && "currentPath"}>
+          <li className={pathName === `/gallery` ? "currentPath" : ""}>
             <Link to="/gallery">Gallery</Link>
           </li>
-          <li className={pathName === `/skills` && "currentPath"}>
+          <li className={pathName === `/skills` ? "currentPath" : ""}>
             <Link to="/skills">Skills</Link>
           </li>
         </ul>

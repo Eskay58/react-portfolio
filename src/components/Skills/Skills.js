@@ -35,33 +35,35 @@ function Skills() {
 
   return (
     <div id="skills_container">
-      <div class="container px-5 mx-auto flex flex-wrap">
-        <div class="flex flex-wrap -m-4">
+      <div className="container px-5 mx-auto flex flex-wrap">
+        <div className="flex flex-wrap -m-4">
           {cards.map((card, i) => {
             return (
-              <div class="p-4 lg:w-1/2 md:w-1/2 w-full" kei={i}>
-                <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
-                  <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+              <div className="p-4 lg:w-1/2 md:w-1/2 w-full" key={i}>
+                <div className="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
+                  <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke-width="1.5"
+                      strokeWidth="1.5"
                       stroke="currentColor"
-                      class="w-6 h-6"
+                      className="w-6 h-6"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         d={card.svg}
                       />
                     </svg>
                   </div>
-                  <div class="flex-grow">
-                    <h2 class="text-gray-900 text-lg font-bold title-font mb-3">
+                  <div className="flex-grow">
+                    <h2 className="text-gray-900 text-lg font-bold title-font mb-3">
                       {card.title}
                     </h2>
-                    <p class="leading-relaxed text-base">{card.description}</p>
+                    <p className="leading-relaxed text-base">
+                      {card.description}
+                    </p>
                   </div>
                 </div>
               </div>
