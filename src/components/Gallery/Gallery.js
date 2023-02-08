@@ -4,62 +4,63 @@ import "../Gallery/Gallery.scss";
 function Gallery() {
   const cards = [
     {
-      title: "Portfolio",
+      title: "ポートフォリオサイト",
       description:
-        "当ウェブサイトです。Reactを用いてポートフォリオサイトを作成しました",
-      skill: "React, Github Pages",
+        "当ウェブサイトです。Reactを用いてポートフォリオサイトを作成しました。",
+      skill: "React, Tailwindcss, Github Pages",
       userId: "",
       password: "",
-      image: require("../../Images/firebase.jpg"),
+      image: require("../../Images/Portfolio.png"),
       url: "#",
     },
     {
-      title: "Pokedex",
-      description: "React, PokeAPIを用いてポケモン図鑑を作成しました",
-      skill: "React,Firebase",
-      userId: "",
-      password: "",
-      image: require("../../Images/firebase.jpg"),
-      url: "https://react-pokemon-app-9d86a.web.app/",
-    },
-    {
-      title: "Angular Chat",
+      title: "チャットアプリケーション",
       description:
         "Angularを用いてチャットアプリケーションを作成しました。認証機能、チャット内容のリアルタイム反映が可能です。",
       skill: "Angular, Bootstrap, Firebase, Firestore",
       userId: "E-mail: eskay058@gmail.com",
       password: "Password: password123",
-      image: require("../../Images/firebase.jpg"),
+      image: require("../../Images/angularchat2.png"),
       url: "https://angularchat-61281.web.app/account/login",
+    },
+    {
+      title: "ポケモン図鑑",
+      description: "React, PokeAPIを用いてポケモン図鑑を作成しました。",
+      skill: "React, Firebase",
+      userId: "",
+      password: "",
+      image: require("../../Images/pokedex.png"),
+      url: "https://react-pokemon-app-9d86a.web.app/",
     },
     {
       title: "【ユーザー用】ECサイト",
       description:
-        "Laravelの認証機能を利用し、管理者、オーナー、ユーザーと3つのログインが可能です。 Bladeコンポーネント, Stripe決済, 画像アップロードなどを実装しています。",
-      skill: "Laravel, Tailwindcss, AWS",
+        "Laravelの認証機能を利用し、管理者、オーナー、ユーザーと3つのログインが可能です。 商品の検索、カートへの追加、Stripeを使用した、デモ決済が可能です。",
+      skill: "Laravel, Tailwindcss, MySQL, AWS",
       userId: "E-mail: test@test.com",
       password: "Password: password123",
-      image: require("../../Images/firebase.jpg"),
+      testCard: "Demo Card: 4242 4242 4242 4242",
+      image: require("../../Images/mlshop-user.png"),
       url: "http://mlshopsk.net/login",
     },
     {
       title: "【オーナー用】ECサイト",
       description:
-        "Laravelの認証機能を利用し、管理者、オーナー、ユーザーと3つのログインが可能です。 Bladeコンポーネント, Stripe決済, 画像アップロードなどを実装しています。",
-      skill: "Laravel, Tailwindcss, AWS",
+        "Laravelの認証機能を利用し、管理者、オーナー、ユーザーと3つのログインが可能です。店舗情報の編集、画像アップロード、商品在庫の管理が可能です。",
+      skill: "Laravel, Tailwindcss, MySQL, AWS",
       userId: "E-mail: test1@test.com",
       password: "Password: password123",
-      image: require("../../Images/firebase.jpg"),
+      image: require("../../Images/mlshop-owner.png"),
       url: "http://mlshopsk.net/owner/login",
     },
     {
       title: "【管理者用】ECサイト",
       description:
-        "Laravelの認証機能を利用し、管理者、オーナー、ユーザーと3つのログインが可能です。 Bladeコンポーネント, Stripe決済, 画像アップロードなどを実装しています。",
-      skill: "Laravel, Tailwindcss, AWS",
+        "Laravelの認証機能を利用し、管理者、オーナー、ユーザーと3つのログインが可能です。オーナー権限の新規登録、編集、削除が可能です。",
+      skill: "Laravel, Tailwindcss, MySQL, AWS",
       userId: "E-mail: test@test.com",
       password: "Password: password123",
-      image: require("../../Images/firebase.jpg"),
+      image: require("../../Images/mlshop-admin.png"),
       url: "http://mlshopsk.net/admin/login",
     },
   ];
@@ -127,6 +128,11 @@ function Gallery() {
                         <br />
                         {card.password}
                       </p>
+
+                      <p class="leading-relaxed mb-3 text-sm">
+                        {card.testCard}
+                      </p>
+
                       <div class="flex items-center flex-wrap ">
                         <a
                           href={card.url}
