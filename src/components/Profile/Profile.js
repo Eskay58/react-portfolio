@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from "react";
-import reactImage from "../../Images/react.png";
-import jsImage from "../../Images/js.png";
-import firebaseImage from "../../Images/firebase.jpg";
-import profileImage from "../../Images/profile6.jpg";
-import githubImage from "../../Images/js.png";
+import profileImage from "../../Images/profile.jpg";
 import "./Profile.scss";
 
 function Profile() {
