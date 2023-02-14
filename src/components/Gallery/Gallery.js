@@ -1,17 +1,62 @@
 import React from "react";
-import "../Gallery/Gallery.scss";
 
 function Gallery() {
   const cards = [
     {
-      title: "ポートフォリオサイト",
+      title: "【実務実績】大阪国際空港 駐車場予約サービス",
+      description: "駐車場予約サービスの機能追加、改修等を担当していました。",
+      skill: "Angular, AWS S3",
+      image: require("../../Images/reserve.png"),
+      url: "https://itami.reserve.parkingweb.jp/top",
+    },
+    {
+      title: "【実務実績】スマートフォン決済サイト",
       description:
-        "当ウェブサイトです。Reactを用いてポートフォリオサイトを作成しました。",
-      skill: "React, Tailwindcss, Github Pages",
-      userId: "",
-      password: "",
-      image: require("../../Images/Portfolio.png"),
-      url: "#",
+        "スマートフォン決済サイトの画面構築・改修等を担当していました。",
+      description2: "※リンク先は参考資料です。",
+      skill: "Angular, AWS S3",
+      image: require("../../Images/smart-pay.png"),
+      url: "https://www.amano.co.jp/Parking/products/parking_system/cashless.html",
+    },
+    {
+      title: "【実務実績】Parking Web 遠隔料金設定サービス画面",
+      description:
+        "PJリーダーの補佐として画面レイアウトイメージ作成、作業指示、作業管理、コーディング等を担当していました。",
+      description2: "※リンク先は参考資料です。",
+      skill: "JavaScript, jQuery, Java",
+      image: require("../../Images/parkingweb.png"),
+      url: "https://parkingweb.jp/",
+    },
+    {
+      title: "ECサイト(ユーザー用)",
+      description:
+        "Laravelの認証機能を利用し、管理者、オーナー、ユーザーと3つのログインが可能です。 商品の検索、カートへの追加、Stripeを使用した、デモ決済が可能です。",
+      skill: "Laravel, Tailwindcss, MySQL, AWS",
+      userId: "E-mail: test@test.com",
+      password: "Password: password123",
+      testCard: "Demo Card: 4242 4242 4242 4242",
+      image: require("../../Images/mlshop-user.png"),
+      url: "http://mlshopsk.net/login",
+    },
+    {
+      title: "ECサイト(オーナー用)",
+      description:
+        "Laravelの認証機能を利用し、管理者、オーナー、ユーザーと3つのログインが可能です。店舗情報の編集、画像アップロード、商品在庫の管理が可能です。",
+      skill: "Laravel, Tailwindcss, MySQL, AWS",
+      userId: "E-mail: test1@test.com",
+      password: "Password: password123",
+      image: require("../../Images/mlshop-owner.png"),
+      url: "http://mlshopsk.net/owner/login",
+    },
+    {
+      title: "ECサイト(管理者用)",
+      description:
+        "Laravelの認証機能を利用し、管理者、オーナー、ユーザーと3つのログインが可能です。オーナー権限の新規登録、編集、削除が可能です。",
+      skill: "Laravel, Tailwindcss, MySQL, AWS",
+      userId: "E-mail: test@test.com",
+      password: "Password: password123",
+      image: require("../../Images/mlshop-admin.png"),
+      url: "http://mlshopsk.net/admin/login",
     },
     {
       title: "チャットアプリケーション",
@@ -24,6 +69,16 @@ function Gallery() {
       url: "https://angularchat-61281.web.app/account/login",
     },
     {
+      title: "ポートフォリオサイト",
+      description:
+        "当ウェブサイトです。Reactを用いてポートフォリオサイトを作成しました。",
+      skill: "React, Tailwindcss, firebase",
+      userId: "",
+      password: "",
+      image: require("../../Images/Portfolio.png"),
+      url: "#",
+    },
+    {
       title: "ポケモン図鑑",
       description: "React, PokeAPIを用いてポケモン図鑑を作成しました。",
       skill: "React, Firebase",
@@ -32,37 +87,6 @@ function Gallery() {
       testCard: "",
       image: require("../../Images/pokedex.png"),
       url: "https://react-pokemon-app-9d86a.web.app/",
-    },
-    {
-      title: "【ユーザー用】ECサイト",
-      description:
-        "Laravelの認証機能を利用し、管理者、オーナー、ユーザーと3つのログインが可能です。 商品の検索、カートへの追加、Stripeを使用した、デモ決済が可能です。",
-      skill: "Laravel, Tailwindcss, MySQL, AWS",
-      userId: "E-mail: test@test.com",
-      password: "Password: password123",
-      testCard: "Demo Card: 4242 4242 4242 4242",
-      image: require("../../Images/mlshop-user.png"),
-      url: "http://mlshopsk.net/login",
-    },
-    {
-      title: "【オーナー用】ECサイト",
-      description:
-        "Laravelの認証機能を利用し、管理者、オーナー、ユーザーと3つのログインが可能です。店舗情報の編集、画像アップロード、商品在庫の管理が可能です。",
-      skill: "Laravel, Tailwindcss, MySQL, AWS",
-      userId: "E-mail: test1@test.com",
-      password: "Password: password123",
-      image: require("../../Images/mlshop-owner.png"),
-      url: "http://mlshopsk.net/owner/login",
-    },
-    {
-      title: "【管理者用】ECサイト",
-      description:
-        "Laravelの認証機能を利用し、管理者、オーナー、ユーザーと3つのログインが可能です。オーナー権限の新規登録、編集、削除が可能です。",
-      skill: "Laravel, Tailwindcss, MySQL, AWS",
-      userId: "E-mail: test@test.com",
-      password: "Password: password123",
-      image: require("../../Images/mlshop-admin.png"),
-      url: "http://mlshopsk.net/admin/login",
     },
   ];
 
@@ -89,30 +113,40 @@ function Gallery() {
                       </h1>
                       <p className="leading-relaxed mb-3 text-sm">
                         {card.description}
+                        <br />
+                        {card.description2}
                       </p>
-                      <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                        スキル
-                      </h2>
-                      <p className="leading-relaxed mb-3 text-sm">
-                        {card.skill}
-                      </p>
-                      {card.userId ? (
-                        <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                          テスト用アカウント
-                        </h2>
+
+                      {card.skill ? (
+                        <div>
+                          <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                            スキル
+                          </h2>
+                          <p className="leading-relaxed mb-3 text-sm">
+                            {card.skill}
+                          </p>
+                        </div>
                       ) : (
                         <></>
                       )}
 
-                      <p className="leading-relaxed mb-3 text-sm">
-                        {card.userId}
-                        <br />
-                        {card.password}
-                      </p>
-
-                      <p className="leading-relaxed mb-3 text-sm">
-                        {card.testCard}
-                      </p>
+                      {card.userId ? (
+                        <div>
+                          <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                            テスト用アカウント
+                          </h2>
+                          <p className="leading-relaxed mb-3 text-sm">
+                            {card.userId}
+                            <br />
+                            {card.password}
+                          </p>
+                          <p className="leading-relaxed mb-3 text-sm">
+                            {card.testCard}
+                          </p>
+                        </div>
+                      ) : (
+                        <></>
+                      )}
 
                       <div className="flex items-center flex-wrap ">
                         <a
